@@ -1,7 +1,7 @@
 # --- BUILD STAGE ---
 FROM node:20-alpine AS builder
 
-WORKDIR /usr/src/app
+WORKDIR /src/app
 
 # Copy package files first for caching
 COPY package*.json ./
