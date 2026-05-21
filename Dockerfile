@@ -7,7 +7,7 @@ WORKDIR /src/app
 COPY package*.json ./
 
 # Install all dependencies (development + production)
-RUN npm ci
+RUN npm install
 
 # Copy source code and config files
 COPY tsconfig*.json ./
