@@ -22,7 +22,7 @@ RUN npm prune --production
 # --- PRODUCTION STAGE ---
 FROM node:20-alpine AS runner
 
-WORKDIR /usr/src/app
+WORKDIR /src/app
 
 # Set production environment
 ENV NODE_ENV=production
